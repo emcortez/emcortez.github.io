@@ -46,25 +46,81 @@
             <section>
 
                 <div id="project_1">
-                    <img src="img/architecture.png">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="img/screen1.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="img/screen2.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="img/screen3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="img/screen4.jpg" style="width:100%">
+                          </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                        </div>
                 </div>
 
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>                    
+
                 <div id="description_1">
-                    <h2> Architectural Design</h2>
-                    <h6><i>September 2022, Adobe Illustrator</i></h6>
-                    <p> Architecture is all around us, especially on a beautiful college campus like USF. This project captured form from buildings on campus with a 5-color palette. The University Center (the bottom right one), although very detailed, became the most satisfying one to complete. </p>
+                    <h2> <i>This Fall Believe In... </i> Promotional Series </h2>
+                    <h6><i>August 2023, Adobe InDesign </i></h6>
+                    <p> In one of my first independent projects, I created a series of digital signage to promote the fall sports for USF Dons. I specifically chose poses that showed character and defined the vibe of each sport, to increase excitement for the sports this Fall semester. A total of 8 rotating posters were displayed at the Sobrato Center and on various screens throughout campus.  </p>
                 </div>
             </section>
 
             <section>
-                <div id="project_2">
-                    <img src="img/3icons_giants.png">
+                <div id="athletics_2">
+                    <img src="img/msoc_header.jpg">
+                    <img src="img/wsoc_header.jpg">
+                    <img src="img/vb_header.jpg">
                 </div>
 
-                <div id="description_2">
-                    <h2> 3 Icons </h2>
-                    <h6><i>March 2023, Adobe Illustrator</i></h6>
-                    <p> The San Francisco Giants’ winning three World Series in 5 years is a pivotal moment in San Francisco's history. The three icons focus on moments that make the Giants unique part of the culture in SF: walking into Oracle Park on your dad’s shoulders, the 3 World Series trophies in display with confetti falling during the parade, and the splash hits that hit McCovey Cove on those summer days.</p>
+                <div id="athleticsdesc_2">
+                    <h2> Email Headers </h2>
+                    <h6><i>Adobe InDesign, Photoshop</i></h6>
+                    <p> One of my biggest tasks is creating email header designs for email marketing campaigns. From promoting gamedays to specific student promotions, my designs are meant to grab the attention and give specific details about the game. </p>
                 </div>
             </section>
 
