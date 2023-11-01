@@ -319,30 +319,6 @@ input:focus, textarea:focus{
     grid-row: 2;
 }
 
-#headshot2{
-    grid-column: 2/6;
-}
-
-#headshotabt{
-    border: 7px solid #E39641;
-    border-radius: 15px;
-}
-
-
-#headline{
-    grid-column: 6/12;
-    display: flex;
-}
-
-#headline2{
-    grid-column: 6/12;
-    display: flex;
-}
-
-#bio{
-    grid-column: 6/12;
-}
-
 #experience{
     grid-column: 2/5;
 }
@@ -367,3 +343,52 @@ input:focus, textarea:focus{
 #socialmedia{
     grid-column: 11/12;
 }
+
+#about_profile {
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+    padding: 0%;
+}
+
+#headshot2{
+    grid-column: 2/3;
+}
+
+#headshotabt{
+    border: 7px solid #E39641;
+    border-radius: 15px;
+}
+
+#headline{
+    grid-column: 4/11;
+    grid-row: 1;
+}
+
+#headline2{
+    grid-column: 4/12;
+    grid-row: 2;
+}
+
+#bio{
+    grid-column: 4/11;
+    grid-row: 2;
+}
+
+#education_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+#school_info{
+    grid-column: 3/9;
+}
+
+#positions_info{
+    display: flex;
+    justify-content: space-between;
+}
+
