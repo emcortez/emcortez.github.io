@@ -392,3 +392,69 @@ input:focus, textarea:focus{
     justify-content: space-between;
 }
 
+/*social media page*/
+
+#social_media {
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+    padding: 0%;
+}
+
+#socialmedia_1{
+    grid-column: 2/7;
+}
+
+#socialdescription_1{
+    grid-column: 7/11;
+    border: 1px solid white;
+}
+
+#socialmedia_2{
+    grid-column: 7/11;
+}
+
+#socialdescription_2{
+    grid-column: 3/7;
+    border: 1px solid white;
+}
+
+#socialmedia_3{
+    grid-column: 2/7;
+}
+
+#socialdescription_3{
+    grid-column: 7/11;
+    border: 1px solid white;
+}
+
+#socialmedia_4{
+    grid-column: 7/11;
+}
+
+#socialdescription_4{
+    grid-column: 3/7;
+    border: 1px solid white;
+}
+
+#socialmedia_5{
+    grid-column: 2/7;
+}
+
+#socialdescription_5{
+    grid-column: 7/11;
+    border: 1px solid white;
+}
+
+#socialmedia_6{
+    grid-column: 7/11;
+}
+
+#socialdescription_6{
+    grid-column: 3/7;
+    border: 1px solid white;
+}
+
