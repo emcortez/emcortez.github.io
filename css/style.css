@@ -310,7 +310,7 @@ input:focus, textarea:focus{
 
 #byline{
     grid-column: 6/12;
-    align-self: last baseline;
+    align-self: end;
     padding-bottom: 25px;
 }
 
