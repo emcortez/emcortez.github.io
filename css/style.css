@@ -64,7 +64,6 @@ footer{
     width: 100%;
     margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -86,7 +85,7 @@ h1{
 }
 
 #title {
-    grid-column: 2/6;
+    grid-column: 2/7;
     color: #F7F4BA;
     font-size: 3rem;
 }
@@ -98,7 +97,8 @@ h1{
 #description_1 {
     grid-column: 7/12;
     border: 1px solid white;
-    padding-left: 10px;
+    align-self: center;
+    padding: 20px;
 }
 
 #project_2 {
@@ -108,7 +108,8 @@ h1{
 #description_2{
     grid-column: 2/6;
     border: 1px solid white;
-    padding-left: 10px;
+    align-self: center;
+    padding: 20px;
 }
 
 #project_3{
@@ -118,7 +119,8 @@ h1{
 #description_3{
     grid-column: 7/12;
     border: 1px solid white;
-    padding-left: 10px;
+    align-self: center;
+    padding: 20px;
 }
 
 #project_4{
@@ -128,7 +130,8 @@ h1{
 #description_4{
     grid-column: 2/6;
     border: 1px solid white;
-    padding-left: 10px;
+    align-self: center;
+    padding: 20px;
 }
 
 #athleticspage{
@@ -233,8 +236,8 @@ img {vertical-align: middle;}
 #athleticsdesc_2{
     grid-column: 3/11;
     border: 1px solid white;
-    padding-left: 10px;
     margin-top: 15px;
+    padding: 20px;
 }
 
 #portfoliosplash{
@@ -289,34 +292,34 @@ input:focus, textarea:focus{
     font-size: 3rem;
 }
 
-#home_profile {
-    margin: 7rem auto;
+/* start of splashpage */
+
+*#home_profile {
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 1.5rem;
     grid-auto-flow: dense;
 }
 
 #headshot{
-    grid-column: 2/6;
+    grid-column: 1/6;
     grid-row: 1/3;
-}
-
-#headshot1{ 
-    border-radius: 15px;
-    border: 7px solid #d2d2d2;
-    grid-column: 2/6;
 }
 
 #byline{
     grid-column: 6/12;
+    align-self: last baseline;
+    padding-bottom: 25px;
 }
 
 #buttons{
     display: flex;
     grid-column: 5/12;
     grid-row: 2;
+    align-items: first baseline;
+    width: 75%;
 }
 
 #experience{
@@ -344,11 +347,13 @@ input:focus, textarea:focus{
     grid-column: 11/12;
 }
 
+/* about section */
+
 #about_profile {
-    margin: 7rem auto;
+    margin: 7rem auto 1rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 2fr 1rem;
     grid-column-gap: 1.5rem;
     grid-auto-flow: dense;
     padding: 0%;
@@ -366,11 +371,7 @@ input:focus, textarea:focus{
 #headline{
     grid-column: 4/11;
     grid-row: 1;
-}
-
-#headline2{
-    grid-column: 4/12;
-    grid-row: 2;
+    align-self: center;
 }
 
 #bio{
@@ -398,7 +399,6 @@ input:focus, textarea:focus{
     margin: 7rem auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50% 50%;
     grid-column-gap: 1.5rem;
     grid-auto-flow: dense;
     padding: 0%;
@@ -411,7 +411,10 @@ input:focus, textarea:focus{
 #socialdescription_1{
     grid-column: 7/11;
     border: 1px solid white;
+    align-self: center;
+    padding: 10px;
 }
+
 
 #socialmedia_2{
     grid-column: 7/11;
@@ -420,6 +423,8 @@ input:focus, textarea:focus{
 #socialdescription_2{
     grid-column: 3/7;
     border: 1px solid white;
+    align-self: center;
+    padding: 10px;
 }
 
 #socialmedia_3{
@@ -429,6 +434,8 @@ input:focus, textarea:focus{
 #socialdescription_3{
     grid-column: 7/11;
     border: 1px solid white;
+    align-self: center;
+    padding: 10px;
 }
 
 #socialmedia_4{
@@ -438,6 +445,8 @@ input:focus, textarea:focus{
 #socialdescription_4{
     grid-column: 3/7;
     border: 1px solid white;
+    align-self: center;
+    padding: 10px;
 }
 
 #socialmedia_5{
@@ -447,6 +456,8 @@ input:focus, textarea:focus{
 #socialdescription_5{
     grid-column: 7/11;
     border: 1px solid white;
+    align-self: center;
+    padding: 10px;
 }
 
 #socialmedia_6{
@@ -456,5 +467,7 @@ input:focus, textarea:focus{
 #socialdescription_6{
     grid-column: 3/7;
     border: 1px solid white;
+    align-self: center;
+    padding: 10px;
 }
 
